@@ -12,11 +12,13 @@ source:
 
 build:
   number: 0
-  skip: True  # [win] 
+  skip: True  # [win]
 
 requirements:
   build:
-  run:
+    - make
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
 
 test:
   commands:
@@ -27,11 +29,11 @@ about:
   license: GPL
   summary: 'Universally Unique Identifier'
   description: |
-    UIDs are 128 bit numbers which are intended to have a high likelihood of uniqueness 
-    over space and time and are computationally difficult to guess. They are globally unique 
-    identifiers which can be locally generated without contacting a global registration authority. 
-    UUIDs are intended as unique identifiers for both mass tagging objects with an extremely 
-    short lifetime and to reliably identifying very persistent objects across a network. 
+    UIDs are 128 bit numbers which are intended to have a high likelihood of uniqueness
+    over space and time and are computationally difficult to guess. They are globally unique
+    identifiers which can be locally generated without contacting a global registration authority.
+    UUIDs are intended as unique identifiers for both mass tagging objects with an extremely
+    short lifetime and to reliably identifying very persistent objects across a network.
   dev_url: http://www.ossp.org/pkg/lib/uuid/
 
 extra:
