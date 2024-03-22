@@ -19,6 +19,8 @@ requirements:
     - make
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+  host:
+    - wget
 
 test:
   commands:
@@ -26,7 +28,8 @@ test:
 
 about:
   home: ftp://ftp.ossp.org/pkg/lib/uuid/
-  license: GPL
+  license: GPL-2.0-or-later
+  license_file: LICENSE.txt
   summary: 'Universally Unique Identifier'
   description: |
     UIDs are 128 bit numbers which are intended to have a high likelihood of uniqueness
