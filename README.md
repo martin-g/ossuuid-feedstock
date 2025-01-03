@@ -22,14 +22,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/ossuuid-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/ossuuid-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
@@ -208,4 +201,5 @@ Feedstock Maintainers
 
 * [@dnadeau4](https://github.com/dnadeau4/)
 * [@doutriaux1](https://github.com/doutriaux1/)
+* [@martin-g](https://github.com/martin-g/)
 
