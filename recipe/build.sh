@@ -2,10 +2,8 @@
 
 set -xe
 
-# update config.guess and config.sub to newer versions which support more CPU architectures
-rm -f config.sub config.guess
-wget "http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD" -O config.guess
-wget "http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub;hb=HEAD" -O config.sub
+# Get an updated config.sub and config.guess
+cp -f $BUILD_PREFIX/share/gnuconfig/config.{sub,guess} .
 
 ./configure --prefix=$PREFIX
 make -j "${CPU_COUNT}"
